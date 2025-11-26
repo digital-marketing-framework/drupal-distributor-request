@@ -1,0 +1,18 @@
+services:
+  _defaults:
+    autowire: false
+    autoconfigure: false
+    public: false
+
+  # Event Subscribers
+  dmf_distributor_request.event_subscriber.core_registry_update:
+    class: Drupal\dmf_distributor_request\Registry\EventSubscriber\CoreRegistryUpdateEventSubscriber
+    tags:
+      - { name: event_subscriber }
+    public: true
+
+  dmf_distributor_request.event_subscriber.distributor_registry_update:
+    class: Drupal\dmf_distributor_request\Registry\EventSubscriber\DistributorRegistryUpdateEventSubscriber
+    tags:
+      - { name: event_subscriber }
+    public: true

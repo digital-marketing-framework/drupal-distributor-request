@@ -1,0 +1,37 @@
+{
+    "name": "digital-marketing-framework/drupal-distributor-request",
+    "description": "Anyrel - Distributor - HTTP Request for Drupal",
+    "license": "GPL-2.0-or-later",
+    "type": "drupal-module",
+    "keywords": [
+        "Drupal",
+        "marketing",
+        "framework",
+        "data",
+        "relay",
+        "distribution",
+        "distributor",
+        "request",
+        "http"
+    ],
+    "authors": [
+        {
+            "name": "Mediatis AG",
+            "email": "info@mediatis.de",
+            "homepage": "https://www.mediatis.de",
+            "role": "Developer"
+        }
+    ],
+    "homepage": "https://www.mediatis.de",
+    "require": {
+        "php": "^8.1",
+        "digital-marketing-framework/distributor-request": "*",
+        "digital-marketing-framework/drupal-distributor-core": "*"
+    },
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Drupal\\dmf_distributor_request\\": "src/"
+        }
+    }
+}
