@@ -33,5 +33,8 @@
         "psr-4": {
             "Drupal\\dmf_distributor_request\\": "src/"
         }
+    },
+    "extra": {
+        "installer-name": "dmf_distributor_request"
     }
 }
