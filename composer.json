@@ -36,9 +36,9 @@
         }
     },
     "extra": {
-        "installer-name": "dmf_distributor_request",
         "branch-alias": {
             "dev-main": "1.x-dev"
-        }
+        },
+        "installer-name": "dmf_distributor_request"
     }
 }
