@@ -8,13 +8,13 @@ use Drupal\dmf_core\Registry\EventSubscriber\AbstractCoreRegistryUpdateEventSubs
 /**
  * Event subscriber for core registry updates.
  */
-class CoreRegistryUpdateEventSubscriber extends AbstractCoreRegistryUpdateEventSubscriber {
-
-  /**
-   * Constructs a CoreRegistryUpdateEventSubscriber object.
-   */
-  public function __construct() {
-    parent::__construct(new DistributorRequestInitialization('dmf_distributor_request'));
-  }
-
+class CoreRegistryUpdateEventSubscriber extends AbstractCoreRegistryUpdateEventSubscriber
+{
+    /**
+     * Constructs a CoreRegistryUpdateEventSubscriber object.
+     */
+    public function __construct()
+    {
+        parent::__construct(new DistributorRequestInitialization('dmf_distributor_request'));
+    }
 }

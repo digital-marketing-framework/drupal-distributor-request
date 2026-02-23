@@ -8,13 +8,13 @@ use Drupal\dmf_distributor_core\Registry\EventSubscriber\AbstractDistributorRegi
 /**
  * Event subscriber for distributor registry updates.
  */
-class DistributorRegistryUpdateEventSubscriber extends AbstractDistributorRegistryUpdateEventSubscriber {
-
-  /**
-   * Constructs a DistributorRegistryUpdateEventSubscriber object.
-   */
-  public function __construct() {
-    parent::__construct(new DistributorRequestInitialization('dmf_distributor_request'));
-  }
-
+class DistributorRegistryUpdateEventSubscriber extends AbstractDistributorRegistryUpdateEventSubscriber
+{
+    /**
+     * Constructs a DistributorRegistryUpdateEventSubscriber object.
+     */
+    public function __construct()
+    {
+        parent::__construct(new DistributorRequestInitialization('dmf_distributor_request'));
+    }
 }
